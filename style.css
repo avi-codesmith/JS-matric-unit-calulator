@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.converter {
+  padding: 25px;
+  background-color: #f1f1f1;
+  border: 2px solid royalblue;
+  border-radius: 8px;
+  box-shadow: 0 1px 32px #dadada;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.converter .title {
+  margin-bottom: 25px;
+}
+
+.inputField {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+input {
+  font-size: 22px;
+  text-align: center;
+  padding: 15px 0;
+  border: none;
+}
+
+#result_box {
+  pointer-events: none;
+}
+
+span {
+  font-size: 30px;
+}
+
+.converter .unit {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 27px;
+}
+
+.unit select {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px;
+  background: #f7f7f7;
+  color: royalblue;
+  border: none;
+}
+
+.btn button {
+  border: 2px solid #fc8585;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: 0.1s;
+  color: #fc8585;
+}
+
+.btn button:hover {
+  background-color: #fc8585;
+  color: #fff;
+}
+
+.btn button:active {
+  background-color: rgb(254, 87, 87);
+  border: 2px solid rgb(254, 87, 87);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
